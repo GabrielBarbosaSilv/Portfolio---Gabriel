@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: black;
+    color: #ededee
+}
+
+.Logo{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 10;
+    left: 0;
+    margin: 10px 2; 
+}
+
+.cabecario{
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: transparent;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.ativa   {
+    color: #FFCE44;
+}
+
+.inic{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.foto {
+    width: 350px;
+    height: auto;
+    margin-left: 400px;
+    border: #FFCE44 solid 1px;
+    border-radius: 7%;
+    border-style:dashed;
+}
+
+.inic-conteudo{
+    max-width: 600px;
+}
+
+.inic-conteudo h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.inic-conteudo h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: goldenrod;
+}
+
+.inic-conteudo p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.cont-sci {
+    position: absolute;
+    bottom: 5%;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #FFCE44;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #FFCE44;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.cont-sci a:hover{
+    color: black;
+}
+
+.cont-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #FFCE44;
+    z-index: -1;
+    transition: .5s;
+}
+
+.cont-sci a:hover::before {
+    width: 100%;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: black;
+    padding: 6rem;
+}
+
+.heading {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+span{
+    color: #FFD700;
+}
+
+.sobre-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid gold;
+}
+
+.sobre-conteudo {
+    text-align: center;
+}
+
+.sobre-conteudo h3 {
+    font-size: 2.6rem;
+}
+
+.sobre-conteudo p {
+    font-size: 16px;
+    margin: 2rem 0 3rem;
+}
+
+footer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 32px;
+}
+
+.portfolio {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 64px 96px;
+}
+.portfolio h1 {
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 64px;
+}
+.portfolio .trabalhos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+.portfolio .trabalhos .trabalho {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 16px;
+    background-color: #FFD700;
+    margin: 8px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 300ms;
+}
+.portfolio .trabalhos .trabalho p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    background-color: #FFD700;
+    color: black;
+    font-weight: 600;
+    transition: 300ms;
+}
+.portfolio .trabalhos .trabalho:hover {
+    transform: scale(110%) translateY(-8px);
+}
+.portfolio .trabalhos .trabalho:hover p {
+    background-color: #FFD700;
+}
+.portfolio .trabalhos .trabalho p b {
+    margin-left: 4px;
+}
+.portfolio .trabalhos .trabalho img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
